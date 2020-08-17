@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Registration form</title>
+        <link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id = "container">
+            <div id="header">
+                <h2>
+                    Character registration
+                </h2>
+            </div>
+            <form class="form" id="form"> 
+
+                <div class="form-control">
+                    <label for="firstname">First name</label>
+                    <input type="text" id="firstname">
+                    <small> error message</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="lastname">Last name</label>
+                    <input type="text" id="lastname">
+                    <small> error message</small>
+                </div>                
+
+                <button type="button" id="submit">Submit</button>
+                <button type="button" id="exit">Close</button>
+            </form>
+        </div>
+        <script src="./script.js" type="text/javascript"></script>
+    </body>
+</html>
