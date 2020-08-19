@@ -11,16 +11,14 @@ body {
 #container {
     width: 600;
     height: 600;
-    background-color: c9ffc9;
-    border-radius: 5px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-	overflow: hidden;
-	max-width: 100%;
+	background-color: #c9ffc9;
+    border-radius: 10px;
 }
 
 #header {
     font-size: 30;
 	border-bottom: 1px solid #4ef279;
+	border-radius: 5px;
 	background-color: #4ef279;
 	padding: 20px 40px;
 }
@@ -34,26 +32,46 @@ body {
     padding-bottom: 20px;
 }
 
-button {
-    font-size: 30;
-    background-color: #4ef279;
-	border: 2px solid #4ef279;
+.form button {
+	font-size: 30;
+	background-color: #4ef279;
+	border: none;
 	border-radius: 4px;
-	color: black;
-	display: block;
 	font-family: inherit;
-	font-size: 16px;
-	padding: 10px;
-	margin-top: 20px;
-	width: 100%;
+	padding: 15px;
+	
 }
 
 .form-control input {
-	border: 2px solid #f0f0f0;
+	border: 2px solid black;
 	border-radius: 4px;
 	display: block;
 	font-family: inherit;
-	font-size: 14px;
-	padding: 10px;
+	font-size: 20px;
+	padding: 12px;
 	width: 100%;
+}
+
+.form-control.success input {
+	border-color: lightgreen;
+	border-radius: 4px;
+}
+
+.form-control.error input {
+	border-color: red;
+	border-radius: 4px;
+}
+
+.form-control.error small {
+	visibility: visible;
+	color: red;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.form-control small {
+	visibility: hidden;
 }

@@ -23,7 +23,7 @@ RegisterNUICallback("submit", function(data)
         {
             color = color,
             multiline = true,
-            args = {"^1Welcome to the BMK server^0 " .. data.firstname .. " " .. data.lastname}
+            args = {"^5Welcome to the BMK server^0 " .. data.firstname .. " " .. data.lastname}
         }
     )
     TriggerServerEvent("registerNewPlayer", data)
